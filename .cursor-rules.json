@@ -1,0 +1,47 @@
+{
+    "project": "Pesaflip Web App (B2B SME Finance Platform)",
+    "tech_stack": ["Next.js", "TypeScript", "TailwindCSS", "PostgreSQL (via Prisma)", "OpenAI API", "Safaricom Daraja API", "Flutterwave API"],
+    "rules": [
+      {
+        "rule": "All user authentication must be done via OTP sent to phone numbers",
+        "enforced": true
+      },
+      {
+        "rule": "Business profiles must be created before accessing financial features",
+        "enforced": true
+      },
+      {
+        "rule": "MPESA collections must be logged with transaction status and metadata",
+        "enforced": true
+      },
+      {
+        "rule": "Invoices must be generated as PDFs and trackable via link",
+        "enforced": true
+      },
+      {
+        "rule": "AI invoice suggestions must use past data scoped to the authenticated user",
+        "enforced": true
+      },
+      {
+        "rule": "Receipts uploaded must be scanned with OCR and linked to expense records",
+        "enforced": true
+      },
+      {
+        "rule": "Only one payment method may be active per transaction (MPESA or card)",
+        "enforced": true
+      },
+      {
+        "rule": "User financial data must never be shared without explicit consent",
+        "enforced": true
+      },
+      {
+        "rule": "All external API keys must be stored in environment variables",
+        "enforced": true
+      },
+      {
+        "rule": "Credit scoring logic must be explainable and never auto-approve loans",
+        "enforced": true
+      }
+    ]
+  }
+  
